@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "PeaVey",
+      "url": "https://peavey.com/MenuImages/Images/Combo.JPG",
+      "price": 500,
+      "currency": "$"
+    },
+    {
+      "id": 2,
+      "name": "Fender65",
+      "url": "https://www.heidmusic.com/assets/1/14/DimLarge/Princeton_1.PNG",
+      "price": 550,
+      "currency": "$"
+    }
+  ]
+}
