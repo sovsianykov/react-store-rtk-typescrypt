@@ -1,18 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit'
 import productsReducer  from "../../app/pages/Products/store/ducks";
 import { useDispatch } from 'react-redux'
-// ...
+import  cartReducer  from "../../app/pages/Cart/store/ducks";
+
 
 export const store = configureStore({
   reducer: {
-    products: productsReducer
+    products: productsReducer,
+    cart: cartReducer
   },
 })
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-
 export type AppDispatch = typeof store.dispatch
 export const useAppDispatch = () => useDispatch<AppDispatch>() // Export a hook that can be reused to resolve types
 
