@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a {
+  color: dimgrey;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+}

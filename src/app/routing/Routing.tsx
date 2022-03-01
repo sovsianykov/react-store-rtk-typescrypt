@@ -4,16 +4,17 @@ import Products from "../pages/Products/containers/Products";
 import Product from "../pages/Products/components/Product";
 import About from "../pages/About/containers/About";
 import Cart from "../pages/Cart/containers/Cart";
+import { AppRoutes } from "./appRouter";
 
-const AppRouter = () => {
+const Routing = () => {
   return (
     <Routes>
-      <Route  path="/"  element={<Products/>} />
-      <Route path=":productId" element={<Product/>} />
-      <Route path="about" element={<About/>} />
-      <Route path="cart" element={<Cart/>} />
+      <Route  path={AppRoutes.Home}  element={<Products/>} />
+      <Route path={AppRoutes.Product} element={<Product/>} />
+      <Route path={AppRoutes.About} element={<About/>} />
+      <Route path={AppRoutes.Cart} element={<Cart/>} />
     </Routes>
   );
 };
 
-export default AppRouter;
+export default Routing;

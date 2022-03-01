@@ -6,6 +6,6 @@ export interface Product {
   currency: string;
 }
 
-export interface CartProduct {
+export interface CartProduct extends Product {
   quantity : number;
 }
