@@ -1,5 +1,5 @@
 import { CartState } from "./models";
-import { createSlice, current, Draft } from "@reduxjs/toolkit";
+import { createSlice, Draft } from "@reduxjs/toolkit";
 
 const initialState: CartState = {
   cartProducts : [],
@@ -17,16 +17,14 @@ export const cartSlice = createSlice({
         state.totalSum= 0 ;
     },
     addToCart : (state: Draft<CartState>,action) => {
-      state.cartProducts.push(action.payload)
+      state.cartProducts.push(action.payload);
+      state.totalSum = state.totalSum + action.payload.price
     },
     removeFromCart : (state: Draft<CartState>,action) => {
-    // const removedItem = state.cartProducts.find((p) => p.id === action.payload.id)
-      const { id } = action.payload
-      const { cartProducts } = state;
-      const index = cartProducts.findIndex((item) => id === item.id);
-      cartProducts.splice(index, 1)
-      console.log(index);
-      current(state).cartProducts.slice(index,1)
+    const remProductIndex =  state.cartProducts.findIndex((p) => p.id === action.payload.id);
+    state.cartProducts.splice(remProductIndex,1)
+      state.totalSum = state.totalSum - action.payload.price
+
 
     }
   },

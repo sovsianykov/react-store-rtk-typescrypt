@@ -10,9 +10,27 @@ import ListItemText from "@mui/material/ListItemText";
 import { HelpCenter, HomeOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { ListAltOutlined, ShoppingCart } from "@material-ui/icons";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles(()=>({
+  root: {
+    position: "fixed",
+    top: 80,
+    left: 0,
+    zIndex: 10,
+    background: "#0961b4",
+
+  },
+  list : {
+    color: "#FFF",
+  }
+}))
 
 
 export default function Navbar() {
+
+  const classes = useStyles()
+
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -36,12 +54,13 @@ export default function Navbar() {
 
   const list = () => (
     <Box
-      sx={{ width: 250 }}
+      sx={{ width: 200 }}
       role="presentation"
       onClick={toggleDrawer( false)}
       onKeyDown={toggleDrawer( false)}
+      className={classes.root}
     >
-      <List>
+      <List >
         <Link to={"/"}>
           <ListItem button>
             <ListItemIcon>

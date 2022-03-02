@@ -37,7 +37,7 @@ const CartItem:FunctionComponent<CartItemProps> = ({product}) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions style={{ justifyContent: "space-between" }}>
+      <CardActions style={{ justifyContent: "space-between" , width: 280}}>
         <Button
           variant="contained"
           color="secondary"

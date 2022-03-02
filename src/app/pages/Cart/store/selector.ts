@@ -14,7 +14,8 @@ export const cartSelector = createSelector(
       sortedCart.push({...cartSameItemsArr[0],quantity:cartSameItemsArr.length })}
     }
     return {
-      sortedCart
+      sortedCart,
+      totalSum
     }
   }
 )

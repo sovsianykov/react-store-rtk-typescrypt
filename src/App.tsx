@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
-import { RootState, useAppDispatch } from "./global/store";
-import { fetchProducts } from "./app/pages/Products/store/thunk";
-import { useSelector } from "react-redux";
+import React from "react";
 import { BrowserRouter} from "react-router-dom";
 import Navbar from "./app/Navbar/containers/Navbar";
 import { Container } from "@mui/material";
 import Routing from "./app/routing/Routing";
+import Header from "./app/Header/Header";
 
 function App() {
 
 
   return (
     <BrowserRouter>
+      <Header/>
       <Navbar />
       <Container>
         <Routing />
