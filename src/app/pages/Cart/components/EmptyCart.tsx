@@ -10,12 +10,13 @@ import { Button } from "@material-ui/core";
 const EmptyCart = () => {
   return (
     <Container >
-       <Typography variant='h4'>
+       <Typography variant='h4' align='center' marginTop={2}>
          Your cart is empty!
-       </Typography><Typography variant='h5'>
+       </Typography>
+      <Typography variant='h5' align='center' margin={2}>
       Try to add something.
     </Typography>
-      <Link to={"/"}>
+      <Link to={"/"} >
         <Button
           variant="contained"
           color="secondary"

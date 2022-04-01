@@ -12,24 +12,21 @@ import { Link } from "react-router-dom";
 import { ListAltOutlined, ShoppingCart } from "@material-ui/icons";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(()=>({
+const useStyles = makeStyles(() => ({
   root: {
     position: "fixed",
     top: 80,
     left: 0,
     zIndex: 10,
-    backgroundColor: "#1976d2"
-
+    backgroundColor: "#1976d2",
   },
-  list : {
+  list: {
     color: "#FFF",
-  }
-}))
-
+  },
+}));
 
 export default function Navbar() {
-
-  const classes = useStyles()
+  const classes = useStyles();
 
   const [state, setState] = React.useState({
     top: false,
@@ -39,8 +36,7 @@ export default function Navbar() {
   });
 
   const toggleDrawer =
-    ( open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent) => {
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
         event.type === "keydown" &&
         ((event as React.KeyboardEvent).key === "Tab" ||
@@ -49,18 +45,18 @@ export default function Navbar() {
         return;
       }
 
-      setState({ ...state, ["left"]: open });
+      setState({ ...state, left: open });
     };
 
   const list = () => (
     <Box
       sx={{ width: 200 }}
       role="presentation"
-      onClick={toggleDrawer( false)}
-      onKeyDown={toggleDrawer( false)}
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
       className={classes.root}
     >
-      <List >
+      <List>
         <Link to={"/"}>
           <ListItem button>
             <ListItemIcon>
@@ -99,12 +95,12 @@ export default function Navbar() {
   );
 
   return (
-    <Box position='fixed'>
-      <Button onClick={toggleDrawer( true)}>MENU</Button>
+    <Box position="fixed">
+      <Button onClick={toggleDrawer(true)}>MENU</Button>
       <Drawer
         anchor={"left"}
         open={state["left"]}
-        onClose={toggleDrawer( false)}
+        onClose={toggleDrawer(false)}
       >
         {list()}
       </Drawer>

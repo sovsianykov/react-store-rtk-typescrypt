@@ -2,7 +2,7 @@
 export const enum AppRoutes  {
   Home ='/',
   About = '/about',
-  Product = '/:productId',
+  ProductPage = '/:productId',
   Cart = '/cart',
   Order = '/order'
 

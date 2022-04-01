@@ -17,11 +17,11 @@ const CartItem:FunctionComponent<CartItemProps> = ({product}) => {
 
   const onAddToCartHandler = useCallback(() => {
      dispatch(addToCart(product))
-  },[dispatch])
+  },[product,dispatch])
 
   const onRemoveFromCartHandler = useCallback(() => {
      dispatch(removeFromCart(product))
-  },[])
+  },[product, dispatch ])
 
   return (
     <Card style={{ margin: 20 , width: 300}}>

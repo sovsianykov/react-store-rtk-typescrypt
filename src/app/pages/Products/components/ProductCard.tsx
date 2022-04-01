@@ -5,7 +5,6 @@ import {
   CardActionArea,
   CardActions,
   CardContent,
-  CardMedia,
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -15,29 +14,23 @@ import { addToCart } from "../../Cart/store/ducks";
 import { useSelector } from "react-redux";
 import { cartSelector } from "../../Cart/store/selector";
 import WrappedImage from "./WrappedImage";
+
 interface ProductCardProps {
   product: Product;
 }
 
-
-
-
-
-
-const ProductCard: FunctionComponent<ProductCardProps> = ({
-  product,
-}) => {
-   const dispatch = useAppDispatch();
+const ProductCard: FunctionComponent<ProductCardProps> = ({ product }) => {
+  const dispatch = useAppDispatch();
   const { sortedCart } = useSelector(cartSelector);
- const active = !! sortedCart.find((p) => p.id === product.id)
+  const active = !!sortedCart.find((p) => p.id === product.id);
   const onClickHandler = useCallback(() => {
-    dispatch(addToCart(product))
-  }, [dispatch,product]);
+    dispatch(addToCart(product));
+  }, [dispatch, product]);
   return (
     <Card style={{ margin: 10, width: 250 }}>
       <CardActionArea>
         <CardContent>
-          <WrappedImage url={product.url} height={200} />
+          <WrappedImage url={product.url} height={180} />
           <Typography gutterBottom variant="h5" component="h2">
             {product.name}
           </Typography>
@@ -47,8 +40,8 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({
         </CardContent>
       </CardActionArea>
       <CardActions style={{ justifyContent: "space-between" }}>
-        <Link to={`/${product.id}`} className="link">
-          Learn More
+        <Link to={`/${product.id}`} className="link"  >
+          <Typography variant='body1' color='brown'>read more</Typography>
         </Link>
         <Button
           variant="contained"
