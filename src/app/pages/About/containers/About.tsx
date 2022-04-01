@@ -1,10 +1,39 @@
 import React from "react";
+import Box from "@mui/material/Box";
+import { Container, Typography } from "@mui/material";
 
 const About = () => {
   return (
-    <div>
-      
-    </div>
+    <Box role='presentation' flex='content' marginTop={10} >
+       <Typography variant='h4' textAlign='center' color='gray'>
+         About Us
+       </Typography>
+      <Container>
+        <Typography variant='body1' >
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloremque
+          enim illo iure officiis omnis placeat sit! Aliquam
+          at consectetur eligendi, et facere illum nesciunt quasi quibusdam recusandae reiciendis repudiandae?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam assumenda et eveniet expedita illum in, molestiae
+          nesciunt nostrum odit porro praesentium quasi quis quod quos ratione repellendus temporibus tenetur.<br/>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque debitis dolorum esse eum
+          iure magni molestiae nostrum optio perspiciatis quaerat recusandae repellat repellendus sed
+          sit soluta tenetur, ullam? Amet aspernatur, consequuntur cumque dolorem eaque eligendi,
+          inventore ipsa ipsum laudantium minus nulla obcaecati, odit pariatur praesentium provident
+          quo reprehenderit similique vero? Adipisci aperiam asperiores autem beatae commodi deleniti<br/>
+          dolore doloremque doloribus dolorum earum est fugit hic impedit iste itaque iusto laboriosam
+          magni maxime minima minus molestiae nam neque nisi perferendis possimus quos recusandae reiciendis
+          repudiandae rerum saepe, tempore ullam vitae voluptatum. Aliquid culpa cupiditate id ipsam minus officia
+          ratione ut, veritatis? Alias aut delectus dolor maiores modi, molestias nihil pariatur quia! Alias aliquid
+          assumenda sunt! Adipisci aperiam, blanditiis commodi consequatur cum cumque doloribus eaque eos error<br/>
+          expedita explicabo fugiat harum hic id ipsam minima nisi numquam omnis possimus praesentium quas quasi
+          quo quod quos ratione recusandae reiciendis reprehenderit rerum saepe sunt tempora vero voluptate
+          voluptatum. Dolor dolore eum facere laborum, minus nihil numquam placeat voluptate voluptatum!
+          Accusantium fugiat harum in iste itaque minima non numquam, obcaecati soluta suscipit vel vero?
+          Architecto autem dignissimos doloremque nam non omnis repellendus repudiandae tenetur totam veniam? Distinctio labore minus recusandae repellendus vel? Aliquam debitis delectus dolore doloremque doloribus ducimus, ea et eum fugit impedit incidunt laudantium nesciunt nihil nulla numquam odit optio quam quasi quis repellendus sint soluta ullam vitae voluptate voluptatibus! Ab eum facilis itaque maxime odit optio quam quasi repudiandae, vitae voluptatibus. Ab accusantium aspernatur atque consequatur cum deserunt distinctio ducimus eius error exercitationem expedita illum incidunt ipsa magni maiores neque obcaecati omnis quam qui quidem quo ratione reprehenderit sequi, ut veniam voluptas voluptatibus! Ab accusantium aliquam asperiores aspernatur deserunt dolores expedita explicabo harum incidunt iusto maxime minus natus nemo, nobis non obcaecati odio odit omnis quaerat quas ratione repellendus repudiandae unde vitae voluptatem! Adipisci aperiam atque beatae culpa cum cumque dolorem ducimus eaque eos et eveniet excepturi ipsam ipsum, laboriosam laudantium libero, magnam maxime minus mollitia nemo neque nihil numquam officia porro possimus quis sunt tenetur ut velit veritatis? Accusamus consequatur eius error esse eveniet fugiat, fugit harum illo illum itaque laudantium, minima natus nisi nulla officia quaerat quas quia quos repellendus sit tempora tempore temporibus tenetur ullam ut. Hic illum in magnam mollitia quis quod quos repellendus soluta? Architecto deserunt in iure quos recusandae. Accusamus dolorum fugit iste, nisi non quos recusandae sapiente veniam vero voluptas? Amet esse nobis, optio ratione repellendus sunt ullam. Alias amet blanditiis consectetur debitis deleniti dignissimos dolorem dolorum earum eius enim et eveniet explicabo fuga in magnam maiores, natus neque non odit perferendis possimus quas quasi quis quos reiciendis repellendus repudiandae sit tempore totam unde ut, velit vero voluptates. A accusamus aperiam architecto deleniti deserunt dolor dolore eaque eius error eveniet, fugiat illo laborum magnam magni maiores nam natus necessitatibus nihil odio pariatur possimus praesentium provident quas quia quod saepe similique, vero! Ab ad aperiam architecto aspernatur culpa delectus ea eligendi est facere hic id in incidunt ipsa magni maxime modi mollitia natus odio officia placeat possimus quam, quas quidem quisquam quod repellat reprehenderit sed sit ut veritatis vero voluptas voluptate voluptatum. A ad animi consequuntur distinctio et ipsum, laborum maxime minus obcaecati quam qui quia, quis ratione, sapiente sequi totam veniam veritatis voluptatum! Corporis cupiditate eum libero natus, nesciunt quis quisquam! A aspernatur esse maxime molestiae nobis odit officiis tenetur unde vel voluptate. Facere incidunt minima natus neque nesciunt provident quaerat repudiandae soluta? Ducimus eos excepturi id labore laudantium placeat possimus praesentium quo? A dolor earum enim error est eum exercitationem, facere iusto magnam, molestias numquam possimus quae qui sapiente, sed suscipit unde! Blanditiis commodi cumque, cupiditate debitis deserunt distinctio dolorem enim ex exercitationem fugiat ipsa laboriosam libero quasi quisquam, quos reprehenderit repudiandae rerum sequi sit voluptatum. Animi assumenda blanditiis cupiditate dicta est, eveniet ex excepturi explicabo illum ipsam nesciunt, porro praesentium quibusdam, sequi velit. Eveniet, mollitia, ullam! Accusamus autem et facere fugit minima nihil praesentium quo tenetur? Ad, ipsa praesentium. Aliquid amet asperiores blanditiis cumque distinctio dolor dolorem, dolores ducimus expedita facere, illo inventore ipsum iure iusto labore laudantium, maxime molestiae molestias nam nihil numquam odit pariatur provident tempora temporibus vitae voluptas? Amet asperiores aut blanditiis consequuntur delectus dignissimos eaque, explicabo facere fuga ipsam ipsum laudantium, libero maiores maxime minima natus nemo odit optio possimus praesentium reprehenderit saepe sapiente sint sunt tempore totam unde vel voluptate, voluptates voluptatum. Accusamus deserunt ducimus ex laboriosam libero nulla repellat veritatis. A accusantium, ad aliquam amet aperiam architecto at aut cum deleniti dicta distinctio dolor dolorum, excepturi explicabo hic illum incidunt inventore itaque labore laboriosam magnam magni, minus mollitia nemo nesciunt nostrum officia perspiciatis quaerat reiciendis repellat sapiente sed similique temporibus ut veniam voluptate voluptatibus. Aperiam atque blanditiis corporis cum, cupiditate dolores eligendi eos fuga illo non officia qui recusandae sed totam velit veniam, vitae voluptates. A accusantium, culpa delectus dicta dolor doloremque ea et exercitationem, laborum magni minima necessitatibus quisquam quo repudiandae ullam unde veniam! Eligendi, rem, ut. Accusantium adipisci alias architecto aspernatur beatae blanditiis commodi cum cumque debitis, deleniti deserunt doloremque eius eos error esse ex, exercitationem illo incidunt ipsam ipsum libero maxime modi natus nihil perferendis possimus qui quidem quod sapiente tempora, tenetur unde vero voluptates. Aliquid aut consequatur cum deleniti dolore facere nam nihil non perferendis quia, quisquam ratione rerum voluptatum! Aliquid aperiam atque, blanditiis consequatur culpa cupiditate delectus dolorem ducimus eligendi ipsum molestias obcaecati quod repellat repudiandae
+          rerum sapiente sed soluta ut.
+        </Typography>
+      </Container>
+    </Box>
   );
 };
 

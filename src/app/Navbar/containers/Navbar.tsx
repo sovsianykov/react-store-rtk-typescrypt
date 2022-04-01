@@ -18,7 +18,7 @@ const useStyles = makeStyles(()=>({
     top: 80,
     left: 0,
     zIndex: 10,
-    background: "#0961b4",
+    backgroundColor: "#1976d2"
 
   },
   list : {

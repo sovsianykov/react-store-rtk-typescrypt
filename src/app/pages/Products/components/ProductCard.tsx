@@ -32,7 +32,7 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({
  const active = !! sortedCart.find((p) => p.id === product.id)
   const onClickHandler = useCallback(() => {
     dispatch(addToCart(product))
-  }, []);
+  }, [dispatch,product]);
   return (
     <Card style={{ margin: 10, width: 250 }}>
       <CardActionArea>
