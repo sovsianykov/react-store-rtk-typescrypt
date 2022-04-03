@@ -24,12 +24,16 @@ export const cartSlice = createSlice({
     const remProductIndex =  state.cartProducts.findIndex((p) => p.id === action.payload.id);
     state.cartProducts.splice(remProductIndex,1)
       state.totalSum = state.totalSum - action.payload.price
-
-
-    }
+    },
+    addOrder : (state: Draft<CartState>,action) => {
+      state.orders.push(action.payload);
+    },
+    cancellOrder : (state: Draft<CartState>,action) => {
+      state.orders.length--;
+    },
   },
 
 });
 
-export const { resetCart , addToCart , removeFromCart} = cartSlice.actions;
+export const { resetCart , addToCart , removeFromCart, addOrder} = cartSlice.actions;
 export default cartSlice.reducer;

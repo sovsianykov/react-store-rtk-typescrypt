@@ -9,6 +9,8 @@ import { useAppDispatch } from "../../../../global/store";
 import { useSelector } from "react-redux";
 import { resetCart } from "../store/ducks";
 import { cartSelector } from "../store/selector";
+import { Link } from "react-router-dom";
+import { AppRoutes } from "../../../routing/appRouter";
 
 
 
@@ -40,7 +42,9 @@ const FilledCart: FunctionComponent<Props> = ({sortedCart}) => {
       <Box role="presentation"  className={classes.buttonsBlock}>
         <Button variant='contained' color='warning' onClick={onResetCartHandler} >Reset Cart</Button>
         <Typography>{`Total sum is $${totalSum}`}</Typography>
-        <Button  variant='contained' color='info' >Make Order</Button>
+        <Link to={AppRoutes.Order}>
+          <Button  variant='contained' color='info' >Make Order</Button>
+        </Link>
       </Box>
 
     <Grid container>

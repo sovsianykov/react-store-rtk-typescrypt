@@ -15,7 +15,8 @@ export const cartSelector = createSelector(
     }
     return {
       sortedCart,
-      totalSum
+      totalSum,
+      orders
     }
   }
 )

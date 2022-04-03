@@ -5,6 +5,7 @@ import About from "../pages/About/containers/About";
 import Cart from "../pages/Cart/containers/Cart";
 import { AppRoutes } from "./appRouter";
 import ProductPage from "../pages/Products/components/Product";
+import OrderPage from "../pages/Order/containers/OrderPage";
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
       <Route path={AppRoutes.ProductPage} element={<ProductPage/>} />
       <Route path={AppRoutes.About} element={<About/>} />
       <Route path={AppRoutes.Cart} element={<Cart/>} />
+      <Route path={AppRoutes.Order} element={<OrderPage/>} />
     </Routes>
   );
 };

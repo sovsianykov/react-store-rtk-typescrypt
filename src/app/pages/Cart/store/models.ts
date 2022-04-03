@@ -1,8 +1,8 @@
-import { CartProduct } from "../../../../shared/models";
+import { CartProduct, Order } from "../../../../shared/models";
 
 
 export interface CartState {
    cartProducts : CartProduct[];
-    orders: string[];
+    orders: Order<CartProduct[]>[];
     totalSum: number;
 }

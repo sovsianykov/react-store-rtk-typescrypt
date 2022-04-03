@@ -35,7 +35,6 @@ const ProductPage:FunctionComponent = () => {
           </Typography>
         </Grid>
       </Grid>
-
     </Container>
   );
 };

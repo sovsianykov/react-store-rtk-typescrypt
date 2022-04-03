@@ -27,11 +27,11 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({ product }) => {
     dispatch(addToCart(product));
   }, [dispatch, product]);
   return (
-    <Card style={{ margin: 10, width: 250 }}>
+    <Card style={{ margin: 5, width: 250 }}>
       <CardActionArea>
         <CardContent>
           <WrappedImage url={product.url} height={180} />
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" marginTop={1}>
             {product.name}
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">
@@ -41,7 +41,7 @@ const ProductCard: FunctionComponent<ProductCardProps> = ({ product }) => {
       </CardActionArea>
       <CardActions style={{ justifyContent: "space-between" }}>
         <Link to={`/${product.id}`} className="link"  >
-          <Typography variant='body1' color='brown'>read more</Typography>
+          <Typography variant='body1' color='brown' marginLeft={1}>read more</Typography>
         </Link>
         <Button
           variant="contained"
